@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Whats's On</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <div class="grid-container">
+<body style="background-color: #0061D5">
+
+    <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="star">
-                <img src="../images/star.png" alt="img of star">
-            </div>
+            <a class="navbar-brand" href="./home.html">
+                <img src="../images/star-fill.svg" width="30" height="30" alt="star">
+            </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -27,43 +33,99 @@
                 </ul>
             </div>
         </nav>
-        <div class="img1Row">
-            <div class="img1">
-                <img src="../images/cinema1.jpg" alt="image of empty cinema with red seats" width="400px">
+    </div>
 
+    <div class="jumbotron jumbotron-fliud">
+        <h1>Now showing</h1>
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class=" carousel-inner" style="max-height: 360px;">
+                <div class="carousel-item active">
+                    <div class="card mb-8" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <img src="../images/Conjuring.jpg" height="100%" class="img-fluid rounded-start"
+                                    alt="Conjuring">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Conjuring</h5>
+                                    <p class="card-text">Halloween special.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-8" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-7">
+                                <img src="../images/Coraline.jpg" height="100%" class="img-fluid rounded-start"
+                                    alt="Coraline">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caroline</h5>
+                                    <p class="card-text">Halloween special</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-8" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../images/Jaws.jpg" height="100%" class=" img-fluid rounded-start" alt="Jaws">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jaws</h5>
+                                    <p class="card-text">Halloween special</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim augue, consectetur id metus
-                    venenatis, vehicula posuere ligula. Praesent pellentesque, odio nec tincidunt mollis, enim quam
-                    finibus ex, et tincidunt leo nulla non lacus.</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="img2Row">
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim augue, consectetur id metus
-                    venenatis, vehicula posuere ligula. Praesent pellentesque, odio nec tincidunt mollis, enim quam
-                    finibus ex, et tincidunt leo nulla non lacus.</p>
-            </div>
-            <div class="img">
-                <img src="../images/cinema1.jpg" alt="image of empty cinema with red seats" width="400px">
+    </div>
 
-            </div>
-        </div>
-        <div class="WOimgrow3">
-            <div class="text">
-
-            </div>
-            <div class="smlimg">
-
-            </div>
-            <div class="smlimg">
-
-            </div>
-            <div class="smlimg">
-
+    <div class="container-fliud">
+        <div class="card mb-8" style="max-width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <h5 class="card-title">Opening Times</h5>
+                    <p>Mon - Fri</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <footer class="socials">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <p>© DF cinema -2021-</p>
+    </footer>
+
+    <tag class="dftag">
+
+    </tag>
 </body>
 
 </html>

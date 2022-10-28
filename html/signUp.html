@@ -4,10 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sign Up</title>
 </head>
 
 <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./home.html">
+            <img src="../images/star-fill.svg" width="30" height="30" alt="star">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./home.html">Home<a><span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./signUp.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./whatsOn.html">What's On</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+        <div class="left">
+            <div class="images">
+                <img src=" ../images/Conjuring.jpg" alt="Jaws movie" width="100%" height="180px">
+            </div>
+            <div class="images">
+                <img src=" ../images/Coraline.jpg" alt="Jaws movie" width="100%" height="180px">
+            </div>
+            <div class="images">
+                <img src=" ../images/Jaws.jpg" alt="Jaws movie" width="100%" height="180px">
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="middle">
+                <form>
+                    <label for="title" class="label">Title:</label><br>
+                </form>
+
+                <label for="fname" class="label">First Name*</label><br><br>
+                <label for="lname" class="label">Last name*</label><br><br>
+                <label for="email" class="label">Email*</label><br><br>
+                <label for="email" class="label">Phone*</label><br><br>
+            </div>
+
+            <div class="input">
+                <select name="Title" id="title" style="width: 80%; margin-top: 20px">
+                    <option value="Ms">Ms</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mx">Mx</option>
+                    <option value="Dr">Dr</option>
+                    <option value="Prof">Prof</option>
+                </select><br><br>
+                <input type=" text" it="fname" class="input" placeholder="First Name" style="width: 80%"><br><br>
+                <input type="text" class="input" placeholder="Last Name" style="width: 80%"><br><br>
+                <input type="text" id="email" class="input" placeholder="Email" style="width: 80%"><br><br>
+                <input type="text" id="phone" class="input" placeholder="Phone" style="width: 80%"><br><br>
+                <form>
+                    <input type="submit" id="blue" value="Sign Me Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="socials">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <p>© DF cinema -2021-</p>
+    </footer>
+
+    <tag class="dftag">
+
+    </tag>
+
 
 </body>
 

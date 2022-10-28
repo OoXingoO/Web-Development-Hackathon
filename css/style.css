@@ -1,22 +1,114 @@
-.grid-container {
-    display: grid;
+.container-fluid {
+    display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-column-gap: 10px;
-    grid-gap: 20px;
 }
+
+.wide {
+    grid-row-start: auto;
+    grid-column: auto / span 4;
+    max-height: 240px;
+}
+
+.narrow {
+    grid-row-start: auto;
+    grid-column: auto / span 1;
+}
+
+
+.main-container {
+    display: flex;
+    background-color: white;
+
+}
+
+.form {
+    display: flex;
+    margin: 10px;
+    flex: 50%;
+}
+
+.left {
+    flex: 50%;
+}
+
+.middle {
+    flex: 30%;
+    font-size: 1.5em;
+}
+
+.label {
+    margin-top: 2em;
+}
+
+.input {
+    flex: 70%;
+    font-size: 1.2em;
+    margin-top: 1.8em;
+}
+
+#title {
+    margin-top: 0
+}
+
+#blue {
+    color: white;
+    background-color: blue;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 1.5em;
+    float: right;
+    margin-right: 3.5em;
+
+}
+
+.images {
+    margin: 20px;
+    width: 80%;
+}
+
 
 .navbar-nav {
     grid-row-start: 1;
+    grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.img1 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
 
 .text1 {
     grid-row-start: 5;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
