@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-gap: 20px;
+}
+
+.navbar-nav {
+    grid-row-start: 1;
+    grid-column-end: 5;
+}
+
+.img1 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.text1 {
+    grid-row-start: 5;
+}
